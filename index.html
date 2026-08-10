@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <!--meta tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind CSS Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              despacho: {
+                bg: '#1a1410',
+                paper: '#2b2118',
+                phosphor: '#5fff5f',
+                phosphorDim: '#8fae8f',
+                psy1: '#ff6ec7',
+                psy2: '#7b2ff7',
+                psy3: '#ff9d4d',
+
+              }
+            },
+            fontFamily: {
+              'jetbrains': ['JetBrains Mono', 'monospace'],
+              'special': ['Special Elite', 'cursive'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <title>My Page</title>
+  </head>
+  <body class="bg-despacho-bg text-despacho-phosphor font-jetbrains">
+    <div class="max-w-5xl mx-auto">
+
+    <header class="text-center py-16">
+      <h1 class="text-5xl font-bold">The Despacho of Cocotrilo</h1>
+      <p class="text-gray-400 mt-2">dreamer, maker , hobbit in mordor</p>
+    </header>
+    
+  <!--about me-->
+    <section class="text-center">
+      <h2 class="text-2xl font-bold">About me</h2>
+      <p class="text-gray-400 mx-10 mb-10 mt-2 leading-snug">My name is Isaac, Isaac means "the one who laughs." I'm a 16 year old currently in high school. I have a double life: in the morning I'm a normal student, I laugh with my friends, and I love answering the teacher's questions. After three o'clock my life changes. I try to pursue a life I am proud of. The afternoon starts with a gym session, I return home and give everything to accomplish my dream. I study for the SAT while I build a bigger portfolio. I love making things, I love learning, and I love the feeling of almost failing, of racing against time, pushing myself to get everything done fast. I love that feeling because it means I get to come back and prove it right... I get faster, I stop making the same mistakes. I learn.</p>
+    </section>
+    
+  <!--Portfolio-->
+    <section class="mx-10 mb-10">
+      <h2 class="text-2xl font-bold">My Work</h2>
+
+      <!--Dsplit-->
+      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
+        <h3 class="my-5 font-bold">The-Dichotomy-Split</h3>
+        <div class="flex flex-col md:flex-row gap-5">
+        <img class="w-full h-full md:flex-1 md:h-64 object-cover" src="/images/dpslit/gifdsplit.gif">
+        <img class="w-full h-full md:flex-1 md:h-64 object-cover" src="/images/dpslit/dsplit.jpeg" alt="Keyboard project">
+        </div>
+        <a class="mb-10 underline" href="https://github.com/Cocotrilito/The-Dichotomy-Split">Github Repo</a>
+      </div>
+      <!--Branded-->
+      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
+        <h3 class="mb-5 font-bold">The Branded One</h3>
+        <div class="flex flex-col md:flex-row gap-5">
+          <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/brandedone/brandedone.gif" alt="Business PCB card demo">
+          <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/brandedone/brandedone.jpeg" alt="Business PCB card">
+          <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/brandedone/back.jpeg" alt="Business PCB card Back">
+        </div>
+        <a class="underline" href="https://github.com/Cocotrilito/The-Branded-one">Github Repo</a>
+      </div>
+      <!--Halo-->
+      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
+        <h3 class="mb-5 font-bold">Halo-0</h3>
+        <div class="flex flex-col md:flex-row gap-5">
+          <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/halo/poster.png" alt="Halo-0 poster">          
+          <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/halo/front.png" alt="Halo-0 Front">
+          <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/halo/back.png" alt="Halo-0 Back">
+        </div>
+        <a class="underline" href="https://github.com/Cocotrilito/HALO-0">Github Repo</a>
+      </div>
+      <!--Chimborazo-->
+      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
+        <h3 class="mb-5 font-bold">Chimborazo Stratos 1</h3>
+        <div class="flex flex-col md:flex-row gap-5">
+          <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/chim/sydney.gif" alt="Chimborazo Build Demo">          
+          <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/chim/build.png" alt="Chimborazo Build Picture">
+        </div>
+        <a class="underline" href="https://github.com/Cocotrilito/Chimborazo-Stratos-1">Github Repo</a>
+      </div>
+      <!--Voyager-->
+      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
+        <h3 class="mb-5 font-bold">Voyager Panel</h3>
+        <div class="flex flex-col md:flex-row gap-5">
+          <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/voyager/VoyagerPanel.gif" alt="Voyager Build Demo">          
+          <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/voyager/finalbuild.jpeg" alt="Voyager Build Picture">
+        </div>
+        <a class="underline" href="https://github.com/Cocotrilito/Voyager-Panel">Github Repo</a>
+      </div>
+    </section>
+
+    <!--Beyond the desk-->
+    <section>
+      <div class="text-center mx-10 mb-10">
+      <h2 class="font-bold text-2xl">Beyond the desk</h2>
+      <p class="text-gray-400">As a normal human being I like to do some other stuff <br> this is what I mostly do in my free time away from my desk</p>
+      </div>
+
+    <!--Activities-->
+      <div class="bg-despacho-paper rounded-3xl p-6 mx-10 mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-10 mb-10">
+        <div>
+          <h3 class="font-bold text-xl my-5">Interact Meraki</h3>
+          <p class="text-gray-400">Being part of a club that challenges you to become a better person and learn from others, this is just a small dip into Rotary in general, I am currently the vicepresident of my club</p>
+          <!--Aqui puedo poner un learn more que me lleve a otra pagina, eso vi en un tutorial de youtube hace siglos pero mi cabexa creo eesa coneccion hehehe, a ver podria ser un wanna join me and thousands of people? learn more here algo asi yo q se-->
+        </div>
+        <div>
+          <h3 class="font-bold text-xl my-5">Misiones</h3>
+          <p class="text-gray-400">Following Jesus word, and actually helping and coexist with locals of your own country in a completly different reality to you changes your whole perspective of your privileges and blessings become more lucid to you.   </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-xl my-5">Gym</h3>
+          <p class="text-gray-400">A strong mind also needs a strong body. The gym is my way to push myself to the limit, give everything I have, and prove myself I am capable of things my mind says im not, without the gym its impossible for me to exist. </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-xl my-5">Bouldering</h3>
+          <p class="text-gray-400">Bouldering, ohhh the adrenaline to feel the last bit of calcium in your muscles is draining, to reach the final rock and at the very top, fall. of course it hurts but its worth it, you aimed for the stars and you did touchthem...  </p>
+        </div>
+      </div>
+      <div class="mx-10 mb-10">
+          <h3 class="font-bold text-xl my-5 ">Solo Traveling</h3>
+          <p class="text-gray-400">People are likely to travel to "find themselves" I completly disagree with that idea, the moment you pack your bags you start a journey of self CREATION, you start to create yourself, and at the journey you are not sightseeing YOU are living the moment, you meet people you meet faces you meet voices, you meet laughs you meet EVERYTHING and that EVERYTHING becomes part of YOU, thats why you never come back the same from a solo traveling</p>
+      </div>
+    </div>
+    </section>
+
+
+    </div>
+    <!--Footer-->
+    <footer class="text-right bg-despacho-paper py-5">
+      <div class="mb-10 mx-20 ">
+        <a href="https://github.com/Cocotrilito">My Github</a>
+        <p>Let It Happen</p>
+      </div>
+    </footer>
+  
+  </body>
+
+</html>
