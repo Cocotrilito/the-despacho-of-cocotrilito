@@ -6,6 +6,10 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
     <!--meta tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The Despacho of Cocotrilo">
+    <meta property="og:description" content="dreamer, maker, hobbit in mordor — a portfolio of hardware builds and side quests.">
+    <meta property="og:image" content="/images/sprites/ficon.png">
+    <link rel="icon" type="image/png" href="/images/sprites/ficon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Tailwind CSS Configuration -->
@@ -15,13 +19,14 @@
           extend: {
             colors: {
               despacho: {
-                bg: '#1a1410',
-                paper: '#2b2118',
-                phosphor: '#5fff5f',
-                phosphorDim: '#8fae8f',
-                psy1: '#ff6ec7',
-                psy2: '#7b2ff7',
-                psy3: '#ff9d4d',
+                bg: '#0a0a12',
+                paper: '#0f172a',
+                phosphor: '#00ff41',
+                phosphorDim: '#166534',
+                psy1: '#ff00ff', // Rosa neón puro
+                psy2: '#00ffff', // Cian/Agua eléctrica
+                psy3: '#7b2ff7', // Púrpura eléctrico
+                chrome: '#e2e8f0', // Para efectos metálicos
 
               }
             },
@@ -34,11 +39,14 @@
       }
     </script>
     
-    <title>My Page</title>
+    <title>The Despacho of Cocotrilo</title>
   </head>
   <body class="bg-despacho-bg text-despacho-phosphor font-jetbrains">
-    <div class="max-w-5xl mx-auto">
+    <div class="fixed top-20 left-10 w-[500px] h-[500px] bg-despacho-psy1 rounded-full blur-3xl opacity-50 -z-10"></div>
+    <div class="fixed bottom-20 right-10 w-96 h-96 bg-despacho-psy2 rounded-full blur-3xl opacity-50 -z-10"></div>
+    <div class="fixed top-1/2 left-1/2 w-80 h-80 bg-despacho-psy3 rounded-full blur-3xl opacity-50 -z-10"></div>
 
+    <div class="max-w-5xl mx-auto">
     <header class="text-center py-16">
       <h1 class="text-5xl font-bold">The Despacho of Cocotrilo</h1>
       <p class="text-gray-400 mt-2">dreamer, maker , hobbit in mordor</p>
@@ -47,7 +55,7 @@
   <!--about me-->
     <section class="text-center">
       <h2 class="text-2xl font-bold">About me</h2>
-      <p class="text-gray-400 mx-10 mb-10 mt-2 leading-snug">My name is Isaac, Isaac means "the one who laughs." I'm a 16 year old currently in high school. I have a double life: in the morning I'm a normal student, I laugh with my friends, and I love answering the teacher's questions. After three o'clock my life changes. I try to pursue a life I am proud of. The afternoon starts with a gym session, I return home and give everything to accomplish my dream. I study for the SAT while I build a bigger portfolio. I love making things, I love learning, and I love the feeling of almost failing, of racing against time, pushing myself to get everything done fast. I love that feeling because it means I get to come back and prove it right... I get faster, I stop making the same mistakes. I learn.</p>
+      <p class="text-gray-400 mx-10 mb-10 mt-2 leading-snug">My name is Isaac, Isaac means "the one who laughs." I'm a 16 year old currently in high school. I have a double life: in the morning I'm a normal student, I laugh with my friends, and I love answering the teacher's questions. After three o'clock my life changes. I try to pursue a life I am proud of. The afternoon starts with a gym session, I return home and give everything to accomplish my dream. I study for the SAT while I build a bigger portfolio. I love making things, I love learning, and I love the feeling of almost failing, of racing against time, pushing myself to get everything done fast. I love that feeling because it means I have the chance to come back and prove it right... I get faster, I stop making the same mistakes. I learn.</p>
     </section>
     
   <!--Portfolio-->
@@ -55,63 +63,108 @@
       <h2 class="text-2xl font-bold">My Work</h2>
 
       <!--Dsplit-->
-      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
-        <h3 class="my-5 font-bold">The-Dichotomy-Split</h3>
-        <div class="flex flex-col md:flex-row gap-5">
-        <img class="w-full h-full md:flex-1 md:h-64 object-cover" src="/images/dpslit/gifdsplit.gif">
-        <img class="w-full h-full md:flex-1 md:h-64 object-cover" src="/images/dpslit/dsplit.jpeg" alt="Keyboard project">
+      <div class="bg-white/5 backdrop-blur-xl border-t border-l border-white/20 rounded-xl p-6 mb-10 relative">
+        <h3 class="mb-5 font-bold text-center">The-Dichotomy-Split</h3>
+        <div class="flex flex-col md:flex-row gap-5 rounded-lg overflow-hidden">
+        
+          <!-- The biggest code ever haahhaahah-->
+          <img class="w-full h-full md:flex-1 md:h-64 object-cover" src="/images/dpslit/gifdsplit.gif">
+          <img class="w-full h-full md:flex-1 md:h-64 object-cover" src="/images/dpslit/dsplit.jpeg" alt="Keyboard project">
         </div>
-        <a class="mb-10 underline" href="https://github.com/Cocotrilito/The-Dichotomy-Split">Github Repo</a>
+        <a href="https://github.com/Cocotrilito/The-Dichotomy-Split"
+            target="_blank" 
+            rel="noopener noreferrer">
+              <img class="absolute -bottom-6 -left-7 rotate-12 mt-4 w-24
+              [image-rendering:pixelated]
+              drop-shadow-[0_0_10px_rgba(0,255,65,0.6)]"
+              src="/images/sprites/github.png" alt="Repo">
+            </a>
+        
+       
       </div>
       <!--Branded-->
-      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
-        <h3 class="mb-5 font-bold">The Branded One</h3>
-        <div class="flex flex-col md:flex-row gap-5">
-          <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/brandedone/brandedone.gif" alt="Business PCB card demo">
+      <div class="bg-white/5 backdrop-blur-xl border-t border-l border-white/20 rounded-xl p-6 mb-10 relative">
+        <h3 class="mb-5 font-bold text-center">The Branded One</h3>
+        <div class="flex flex-col md:flex-row gap-5 rounded-lg overflow-hidden">
+          
+            <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/brandedone/brandedone.gif" alt="Business PCB card demo">
+            
+          
           <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/brandedone/brandedone.jpeg" alt="Business PCB card">
           <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/brandedone/back.jpeg" alt="Business PCB card Back">
         </div>
-        <a class="underline" href="https://github.com/Cocotrilito/The-Branded-one">Github Repo</a>
+          <a href="https://github.com/Cocotrilito/The-Branded-one"
+            target="_blank"
+            rel="noopener noreferrer">
+              <img class="absolute -bottom-10 -left-9 -rotate-12 mt-5 w-24
+              [image-rendering:pixelated]
+              drop-shadow-[0_0_10px_rgba(0,255,65,0.6)]"
+              src="/images/sprites/github.png" alt="Repo">
+            </a>
+
+        
       </div>
       <!--Halo-->
-      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
-        <h3 class="mb-5 font-bold">Halo-0</h3>
-        <div class="flex flex-col md:flex-row gap-5">
+      <div class="bg-white/5 backdrop-blur-xl border-t border-l border-white/20 rounded-xl p-6 mb-10 relative">
+        <h3 class="mb-5 font-bold text-center">Halo-0</h3>
+        <div class="flex flex-col md:flex-row gap-5 rounded-lg overflow-hidden">
           <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/halo/poster.png" alt="Halo-0 poster">          
           <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/halo/front.png" alt="Halo-0 Front">
           <img class="w-full object-contain md:w-96 md:h-80 md:object-cover" src="/images/halo/back.png" alt="Halo-0 Back">
         </div>
-        <a class="underline" href="https://github.com/Cocotrilito/HALO-0">Github Repo</a>
+            <a class="underline" href="https://github.com/Cocotrilito/HALO-0" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            <img class="absolute -bottom-7 -left-11 rotate-12 mt-5 w-24
+              [image-rendering:pixelated]
+              drop-shadow-[0_0_10px_rgba(0,255,65,0.6)]"
+              src="/images/sprites/github.png" alt="Repo">
+            </a>
       </div>
       <!--Chimborazo-->
-      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
-        <h3 class="mb-5 font-bold">Chimborazo Stratos 1</h3>
-        <div class="flex flex-col md:flex-row gap-5">
+      <div class="bg-white/5 backdrop-blur-xl border-t border-l border-white/20 rounded-xl p-6 mb-10 relative">
+        <h3 class="mb-5 font-bold text-center">Chimborazo Stratos 1</h3>
+        <div class="flex flex-col md:flex-row gap-5 rounded-lg overflow-hidden">
           <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/chim/sydney.gif" alt="Chimborazo Build Demo">          
+          
           <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/chim/build.png" alt="Chimborazo Build Picture">
         </div>
-        <a class="underline" href="https://github.com/Cocotrilito/Chimborazo-Stratos-1">Github Repo</a>
+        <a class="underline" href="https://github.com/Cocotrilito/Chimborazo-Stratos-1" 
+          target="_blank" 
+          rel="noopener noreferrer">
+          <img class="absolute -bottom-5 -left-11 -rotate-6 mt-5 w-24
+              [image-rendering:pixelated]
+              drop-shadow-[0_0_10px_rgba(0,255,65,0.6)]"
+              src="/images/sprites/github.png" alt="Repo"></a>
+        
       </div>
       <!--Voyager-->
-      <div class="bg-despacho-paper rounded-3xl p-6 mb-10">
-        <h3 class="mb-5 font-bold">Voyager Panel</h3>
-        <div class="flex flex-col md:flex-row gap-5">
+      <div class="bg-white/5 backdrop-blur-xl border-t border-l border-white/20 rounded-xl p-6 mb-10 relative">
+        <h3 class="mb-5 font-bold text-center">Voyager Panel</h3>
+        <div class="flex flex-col md:flex-row gap-5 rounded-lg overflow-hidden">
           <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/voyager/VoyagerPanel.gif" alt="Voyager Build Demo">          
           <img class="w-full object-contain md:flex-1 md:h-80 md:object-cover" src="/images/voyager/finalbuild.jpeg" alt="Voyager Build Picture">
         </div>
-        <a class="underline" href="https://github.com/Cocotrilito/Voyager-Panel">Github Repo</a>
+          <a class="underline" href="https://github.com/Cocotrilito/Voyager-Panel" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            <img class="absolute -bottom-12 -left-11 rotate-2 mt-5 w-24
+              [image-rendering:pixelated]
+              drop-shadow-[0_0_10px_rgba(0,255,65,0.6)]"
+              src="/images/sprites/github.png" alt="Repo">
+          </a>
       </div>
     </section>
 
     <!--Beyond the desk-->
-    <section>
+    <section class="mx-5">
       <div class="text-center mx-10 mb-10">
       <h2 class="font-bold text-2xl">Beyond the desk</h2>
       <p class="text-gray-400">As a normal human being I like to do some other stuff <br> this is what I mostly do in my free time away from my desk</p>
       </div>
 
     <!--Activities-->
-      <div class="bg-despacho-paper rounded-3xl p-6 mx-10 mb-8">
+      <div class="bg-white/5 backdrop-blur-xl border-t border-l border-white/20 rounded-xl p-6 mb-10">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mx-10 mb-10">
         <div>
           <h3 class="font-bold text-xl my-5">Interact Meraki</h3>
@@ -141,10 +194,13 @@
 
     </div>
     <!--Footer-->
-    <footer class="text-right bg-despacho-paper py-5">
-      <div class="mb-10 mx-20 ">
+    <footer class="bg-white/5 backdrop-blur-xl border-t border-l border-white/20 rounded-t-xl p-6 w-full">
+      <div class="mx-20 relative">
         <a href="https://github.com/Cocotrilito">My Github</a>
-        <p>Let It Happen</p>
+        <p> Is someone reading this?</p>
+        <a href="https://www.youtube.com/@cocotrilo9204">My Youtube?</a>
+        <img class="absolute top-1 right-1 [image-rendering:pixelated]" 
+        src="images/sprites/cocodance.png" alt="cocotrilo">
       </div>
     </footer>
   
