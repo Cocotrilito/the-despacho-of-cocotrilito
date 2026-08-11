@@ -30,6 +30,16 @@
 
               }
             },
+            keyframes: {
+              crt0n: {
+                '0%': { opacity: '0', filter: 'brightness(3)' },
+                '10%': { opacity: '1', filter: 'brightness(3)' },
+                '100%': { opacity: '1', filter: 'brightness(1)' },
+              }
+            },
+            animation: {
+              crt0n: 'crt0n 1s ease-in-out',
+            },
             fontFamily: {
               'jetbrains': ['JetBrains Mono', 'monospace'],
               'special': ['Special Elite', 'cursive'],
@@ -41,7 +51,17 @@
     
     <title>The Despacho of Cocotrilo</title>
   </head>
-  <body class="bg-despacho-bg text-despacho-phosphor font-jetbrains">
+  <body class="bg-despacho-bg text-despacho-phosphor font-jetbrains animate-crt0n">
+    <!--scanlines-->
+    <div class="fixed inset-0 pointer-events-none z-50 opacity-[0.2]"
+      style="background: repeating-linear-gradient(0deg, transparent 0px, transparent 1px, rgba(255,255,255,0.5) 2px, transparent 3px);">
+    </div>
+    <!--vignette-->
+    <div class="fixed inset-0 pointer-events-none z-40"
+      style="background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,1) 100%);">
+    </div>
+
+
     <!--blobs hihihiha-->
     <div class="fixed top-20 left-10 w-[500px] h-[500px] bg-despacho-psy1 rounded-full blur-3xl opacity-50 -z-10 animate-pulse [animation-delay:0.5s]"></div>
     <div class="fixed bottom-20 right-10 w-96 h-96 bg-despacho-psy2 rounded-full blur-3xl opacity-50 -z-10 animate-pulse [animation-delay:1.5s]"></div>
@@ -49,10 +69,22 @@
 
     <div class="max-w-5xl mx-auto">
     <header class="text-center py-16">
-      <h1 class="text-5xl font-bold">The Despacho of Cocotrilo</h1>
+      <h1 id="typedTittle" class="text-5xl font-bold after:content-['\_'] after:animate-pulse"></h1>
       <p class="text-gray-400 mt-2">dreamer, maker , hobbit in mordor</p>
     </header>
-    
+    <script>
+      const text= "The Despacho of Cocotrilo";
+      const el = document.getElementById("typedTittle");
+      let i = 0;
+      function typeWriter() {
+        if (i < text.length) {
+          el.textContent += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 60);
+        }
+      }
+      typeWriter();
+    </script>
   <!--about me-->
     <section class="text-center">
       <h2 class="text-2xl font-bold [text-shadow:0_0_15px_rgba(0,255,65,0.6)]">About me</h2>
@@ -170,7 +202,7 @@
     <!--Beyond the desk-->
     <section class="mx-5">
       <div class="text-center mx-10 mb-10">
-      <h2 class="text-2xl font-bold my-4 [text-shadow:0_0_15px_rgba(0,255,65,0.6)]">&gt;Beyond the desk</h2>
+      <h2 class="text-2xl font-bold my-4 [text-shadow:0_0_15px_rgba(0,255,65,0.6)]">&gt; Beyond the desk</h2>
       <p class="text-gray-400">As a normal human being I like to do some other stuff <br> this is what I mostly do in my free time away from my desk</p>
       </div>
 
@@ -216,7 +248,23 @@
         src="images/sprites/cocodance.png" alt="cocotrilo">
       </div>
     </footer>
-  
+    <!--button backtotop-->
+    <button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      class="fixed bottom-6 right-6 bg-despacho-phosphor text-despacho-bg font-bold
+      px-4 py-2 rounded-full opacity-0 pointer-events-none
+      transition-opacity duration-300 z-50">
+      ↑ TOP
+    </button>
+    <script>
+      window.addEventListener('scroll', () => {
+        const btn = document.getElementById('backToTop');
+        if (window.scrollY > 700) {
+          btn.classList.remove('opacity-0', 'pointer-events-none');
+        }else {
+          btn.classList.add('opacity-0', 'pointer-events-none')
+        }
+      });
+    </script>
   </body>
 
 </html>
