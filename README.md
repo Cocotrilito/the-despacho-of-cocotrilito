@@ -44,12 +44,12 @@ This is my personal website, and also a portfolio, when I was I kid I started pl
         <td><img src="images/readme/Start.png" width="400"></td>
         <td><img src="images/readme/Beyondthedesk.png" width="400"></td>
     </tr>
+        <tr>
+        <td align="center"><b>Parallax & Hover</b></td>
+        <td align="center"><b>Sticker</b></td>
+    </tr>
     <tr>
         <td><img src="images/readme/hover and parallax.png" width="400"></td>
         <td><img src="images/readme/stickers.png" width="400"></td>
-    </tr>
-    <tr>
-        <td align="center"><b>Parallax & Hover</b></td>
-        <td align="center"><b>Sticker</b></td>
     </tr>
 </table>
