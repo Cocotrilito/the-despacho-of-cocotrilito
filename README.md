@@ -45,7 +45,7 @@ This is my personal website, and also a portfolio, when I was I kid I started pl
         <td align="center"><b>Beyond The Desk</b></td>
     </tr>
     <tr>
-        <td><img src="images/readme/hover and parallax.png"></td>
+        <td><img src="images/readme/hover and parallax.png" width="400"></td>
         <td><img src="images/readme/stickers.png" width="400"></td>
     </tr>
     <tr>
