@@ -1,5 +1,5 @@
 <div align="center">
-<img src="images/sprites/ficonuy.png" width="128" style="image-rendering: -moz-crisp-edges; image-rendering: crisp-edges">
+<img src="images/sprites/ficontuy.png" width="128" style="image-rendering: -moz-crisp-edges; image-rendering: crisp-edges">
 
 # The Despacho of Cocotrilo
 
