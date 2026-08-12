@@ -1,5 +1,5 @@
 <div align="center">
-<img src="images/sprites/ficon.png" width="400">
+<img src="images/sprites/ficon.png" width="400" style="image-rendering: pixelated;">
 
 # The Despacho of Cocotrilo
 
