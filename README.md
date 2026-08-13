@@ -58,10 +58,11 @@ This is my personal website, and also a portfolio, when I was I kid I started pl
 ## Special thanks
 
 SPECIAL THANKS TO hackclub and the YSWS Macondo!
+also to @NotARoomba, for the support and for helping me make it to Macondo.
 
-
-## you might also like
+## You might also like
 
 Check out some of my other projects:
-- [Chimborazo Stratos-1](https://github.com/Cocotrilito/Chimborazo-Stratos-1) - A rocket flight computer
+- [Chimborazo Stratos-1](https://github.com/Cocotrilito/Chimborazo-Stratos-1) - A rocket flight computer 
 - [The Branded One](https://github.com/Cocotrilito/The-Branded-one) - An NFC business card
+
